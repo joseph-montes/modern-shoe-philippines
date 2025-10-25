@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Shoee Philippines</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="auth-buttons">
+      <a href="login.html" class="auth-btn login-btn">Log In</a>
+      <a href="signup.html" class="auth-btn signup-btn">Sign Up</a>
+    </div>
+
+    <header class="main-header">Modern Shoee Philippines</header>
+    
+    <nav>
+        <a onclick="showContent('home')" class="nav-link active-link">Home</a>
+        <a onclick="showContent('about')" class="nav-link">About Us</a>
+        <a onclick="showContent('contact')" class="nav-link">Contact Us</a>
+    </nav>
+    
+    <div id="home" class="content active">
+        <section class="hero">
+            <h1>Step Into Style</h1>
+            <p>Find the best performance footwear at unbeatable prices!</p>
+            <a href="login.html" class="cta-btn">Shop Now</a>
+        </section>
+        
+        <section class="products">
+            <h2>Featured Products</h2>
+            <div class="product-container">
+                <a href="login.html" class="product-link">
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <img src="/pic/p1.png" alt="Nike Sabrina 2 EP 'Apricot Agate'">
+                        </div>
+                        <h3 class="product-title">Nike Sabrina 2 EP 'Apricot Agate'</h3>
+                        <div class="product-meta">
+                            <div class="stars">
+                                &#9733;&#9733;&#9733;&#9733;&#9733;
+                            </div>
+                            <span class="sold-count">15k sold</span>
+                        </div>
+                        <p class="product-price">₱7,395.00</p>
+                    </div>
+                </a>
+                <a href="login.html" class="product-link">
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <img src="/pic/p2.png" alt="Nike Sabrina 2 NRG EP 'Stronger Than Gold'">
+                        </div>
+                        <h3 class="product-title">Nike Sabrina 2 NRG EP 'Stronger Than Gold'</h3>
+                        <div class="product-meta">
+                            <div class="stars">
+                                &#9733;&#9733;&#9733;&#9733;&#9733;
+                            </div>
+                            <span class="sold-count">20k sold</span>
+                        </div>
+                        <p class="product-price">₱7,895.00</p>
+                    </div>
+                </a>
+                <a href="login.html" class="product-link">
+                    <div class="product-card">
+                        <div class="product-image-wrapper">
+                            <img src="/pic/p3.png" alt="Nike Sabrina 2 EP 'Bubble'">
+                        </div>
+                        <h3 class="product-title">Nike Sabrina 2 EP 'Bubble'</h3>
+                        <div class="product-meta">
+                            <div class="stars">
+                                &#9733;&#9733;&#9733;&#9733;&#9733;
+                            </div>
+                            <span class="sold-count">23k sold</span>
+                        </div>
+                        <p class="product-price">₱7,395.00</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <div id="about" class="content">
+        <h2 class="section-heading">About Us</h2>
+        <p class="content-text">Modern Shoee Philippines is dedicated to providing the best selection of premium athletic footwear. We aim to offer stylish, durable, and affordable shoes for athletes and enthusiasts across the nation, ensuring every step you take is in comfort and style.</p>
+    </div>
+
+    <div id="contact" class="content">
+        <h2 class="section-heading">Contact Us</h2>
+        <p class="content-text">Email:support@modernshoeeph.com</p>
+        <p class="content-text">Phone:+63 976 211 5405</p>
+        <p class="content-text">Address:Cebu City, Philippines</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Modern Shoee Philippines. All rights reserved.</p>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

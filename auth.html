@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Shoee PH - Login/Register</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+    <div class="auth-wrapper">
+        <a href="index.html" class="home-btn">Return to Homepage</a>
+        
+        <div class="form-container active-form" id="login-form-section">
+            <img src="/pic/logo1.png" alt="Modern Shoee Logo" id="logo1">
+            <header>Welcome to Modern Shoee Philippines</header>
+            <div class="input-box">
+                <label for="login-username">Username or Email</label>
+                <input type="text" id="login-username" required placeholder="Enter username or email">
+            </div>
+            <div class="input-box password-container">
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" required placeholder="Enter password">
+                <input type="checkbox" class="password-toggle" onclick="togglePassword('login-password')">
+            </div>
+            <button id="loginButton" class="auth-submit-btn signup-btn">Log In</button>
+            <p class="form-switch-text">
+    New user? <a href="#" id="show-signup">Register here</a>
+</p>
+        </div>
+
+        <div class="form-container" id="signup-form-section">
+            <img src="/pic/logo1.png" alt="Modern Shoee Logo" id="logo1">            
+            <header>Create Your Account</header>
+            <form id="signup-form" action="#" method="post">
+                <div class="input-box">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" required placeholder="Enter full name">
+                </div>
+                <div class="input-box">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter email">
+                </div>
+                <div class="input-box">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required placeholder="Enter username">
+                </div>
+                <div class="input-box password-container">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required placeholder="Enter password">
+                    <input type="checkbox" class="password-toggle" onclick="togglePassword('password')">
+                </div>
+                <div class="input-box password-container">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirm password">
+                    <input type="checkbox" class="password-toggle" onclick="togglePassword('confirm-password')">
+                </div>
+                <button type="submit" class="auth-submit-btn signup-btn">Sign Up</button>
+                <p class="form-switch-text">
+    Already have an account? <a href="#" id="show-login">Log in here</a>
+                 </p>
+            </form>
+        </div>
+        
+        <div class="form-container condition-section" id="condition-section">
+            <header>Account Agreement</header>
+            <p>Before proceeding, please read and accept our Terms and Conditions.</p>
+            <button id="openModal" class="cta-btn">Read Agreement</button>
+            <label class="agreement-checkbox">
+                <input type="checkbox" id="agreeCheckbox" disabled> I agree to the Terms and Conditions
+            </label>
+            <button id="continueButton" disabled class="cta-btn">Agree and Continue</button>
+            <p id="confirmation">✅ Success! Redirecting...</p>
+        </div>
+
+    </div>
+
+    <div class="modal" id="agreementModal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h3>Terms and Conditions</h3>
+            <p>By using Modern Shoee Philippines, you agree to abide by our policies...</p>
+            <p>1. You must provide accurate information.</p>
+            <p>2. Your account is personal and cannot be shared.</p>
+            <p>3. We are not responsible for incorrect orders.</p>
+            <p>4. Payments must be completed before delivery.</p>
+            <p>5. Refunds are subject to approval.</p>
+            <button id="acceptTerms" class="cta-btn">I Agree</button>
+        </div>
+    </div>
+    
+    <script src="js/auth.js"></script>
+</body>
+</html>
+.
